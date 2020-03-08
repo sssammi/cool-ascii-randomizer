@@ -8,7 +8,9 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  // .get('/gen', (req, res) => res.render('pages/gen'))
-  // .get('/cool', (req, res) => res.send(cool()))
-  .get('/cool', (req, res) => res.render('pages/gen')
+  .get('/cool', (req, res) => {
+    const face = cool();
+    console.log({face});
+    res.render('pages/gen', {face});
+  })
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
