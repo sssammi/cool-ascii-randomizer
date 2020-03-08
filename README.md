@@ -8,8 +8,8 @@ Clicking the button randomizes a different ascii face on the screen.
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
 
 ```sh
-$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+$ git clone git@github.com:sssammi/cool-ascii-randomizer.git
+$ cd cool-ascii-randomizer
 $ npm install
 $ npm start
 ```
